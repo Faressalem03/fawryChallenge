@@ -1,35 +1,26 @@
-# Fawry Internship Challenge - Java Solution
+# Fawry Java Challenge
 
-This is my solution for the Fawry Quantum Internship Challenge.  
-The task was to build a simple e-commerce system using OOP in Java.
+This is a small Java project for the Fawry internship.
 
-## Project Summary
+## What it does
 
-I created a set of Java classes that simulate basic e-commerce features like:
+- You can create products with name, price, and quantity.
+- Some products can expire (like cheese or biscuits).
+- Some products need shipping and have weight.
+- You can add products to a cart.
+- There is a checkout that shows subtotal, shipping, and total.
+- It gives errors if:
+  - the product is expired
+  - the cart is empty
+  - the customer has no enough money
+  - the quantity is more than what's in stock
 
-- Adding products (some can expire, some need shipping)
-- A cart that holds items and their quantities
-- A checkout process that calculates subtotal, shipping, and total
-- A few checks like:
-  - Not enough balance
-  - Product is expired
-  - Cart is empty
-  - Quantity requested is more than what's in stock
+## How to run it
 
-## How to Run
+Open the project in NetBeans (or any Java IDE).  
+Run the `Main.java` file and check the console.
 
-You can open the project in NetBeans or any Java IDE.  
-Run the `Main.java` file to see all the test cases.
-
-Each case will print something in the console like:
-
-- A successful checkout
-- Errors if the cart is empty or product is expired
-- Shipment summary if needed
-
-## Files
-
-These are the main Java files I used:
+## Files in the project
 
 - Product.java
 - ExpirableProduct.java
@@ -40,6 +31,3 @@ These are the main Java files I used:
 - Customer.java
 - OrderProcessor.java
 - Main.java
-
-I tried to keep everything simple and clear.
-
